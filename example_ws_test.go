@@ -3,9 +3,9 @@ package bpx_api_go
 import (
 	"flag"
 	"github.com/gorilla/websocket"
-	"github.com/syp25815/bpx-api-go/bpx"
-	"github.com/syp25815/bpx-api-go/bpx/types"
-	"github.com/syp25815/bpx-api-go/xstring"
+	"github.com/rambollwong/bpx-api-go/bpx"
+	"github.com/rambollwong/bpx-api-go/bpx/types"
+	"github.com/rambollwong/bpx-api-go/xstring"
 	"log"
 	"os"
 	"os/signal"

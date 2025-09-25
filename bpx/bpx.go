@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/parnurzeal/gorequest"
+	"github.com/rambollwong/bpx-api-go/bpx/types"
 	"github.com/spf13/cast"
-	"github.com/syp25815/bpx-api-go/bpx/types"
 )
 
 const (

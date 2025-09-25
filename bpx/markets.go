@@ -2,7 +2,7 @@ package bpx
 
 import (
 	"fmt"
-	"github.com/syp25815/bpx-api-go/bpx/types"
+	"github.com/rambollwong/bpx-api-go/bpx/types"
 )
 
 func Assets() (resp []*types.Asset) {

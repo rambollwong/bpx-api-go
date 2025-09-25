@@ -1,8 +1,8 @@
 package bpx
 
 import (
+	"github.com/rambollwong/bpx-api-go/bpx/types"
 	"github.com/spf13/cast"
-	"github.com/syp25815/bpx-api-go/bpx/types"
 )
 
 func (c *Client) HistoryOrders(symbol, orderId string, limit, offset int64) (resp []*types.Order) {

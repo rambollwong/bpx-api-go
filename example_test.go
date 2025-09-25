@@ -3,8 +3,8 @@ package bpx_api_go
 import (
 	"testing"
 
-	"github.com/syp25815/bpx-api-go/bpx"
-	"github.com/syp25815/bpx-api-go/xstring"
+	"github.com/rambollwong/bpx-api-go/bpx"
+	"github.com/rambollwong/bpx-api-go/xstring"
 )
 
 func TestBpx(t *testing.T) {

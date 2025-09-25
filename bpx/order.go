@@ -1,7 +1,7 @@
 package bpx
 
 import (
-	"github.com/syp25815/bpx-api-go/bpx/types"
+	"github.com/rambollwong/bpx-api-go/bpx/types"
 )
 
 func (c *Client) OrderExecute(symbol, side, orderType, timeInForce, quantity, price string) (resp *types.Order) {

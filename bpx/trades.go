@@ -1,7 +1,7 @@
 package bpx
 
 import (
-	"github.com/syp25815/bpx-api-go/bpx/types"
+	"github.com/rambollwong/bpx-api-go/bpx/types"
 )
 
 func Trades(symbol string, limit uint64) (resp []*types.TradeDetail) {

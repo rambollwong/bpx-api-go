@@ -7,7 +7,7 @@ Backpack Exchange Go code
 https://docs.backpack.exchange/
 
 ## Installation
-`go get github.com/syp25815/bpx-api-go`
+`go get github.com/rambollwong/bpx-api-go@4prism`
 
 ### 好用请Star
 
