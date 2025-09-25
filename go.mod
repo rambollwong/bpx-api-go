@@ -1,4 +1,4 @@
-module github.com/ramboll/bpx-api-go
+module github.com/rambollwong/bpx-api-go
 
 go 1.22.0
 
