@@ -4,12 +4,13 @@ import (
 	"crypto/ed25519"
 	"encoding/base64"
 	"fmt"
-	"github.com/parnurzeal/gorequest"
-	"github.com/spf13/cast"
-	"github.com/syp25815/bpx-api-go/bpx/types"
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/parnurzeal/gorequest"
+	"github.com/spf13/cast"
+	"github.com/syp25815/bpx-api-go/bpx/types"
 )
 
 const (
@@ -100,6 +101,10 @@ func (c *Client) wrapAgent(request *gorequest.SuperAgent, params map[string]any)
 			instruction = "orderQueryAll"
 		} else if method == gorequest.DELETE {
 			instruction = "orderCancelAll"
+		}
+	} else if strings.HasSuffix(url, "/api/v1/position") {
+		if method == gorequest.GET {
+			instruction = "positionQuery"
 		}
 	}
 

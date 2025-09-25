@@ -1,9 +1,10 @@
 package bpx_api_go
 
 import (
+	"testing"
+
 	"github.com/syp25815/bpx-api-go/bpx"
 	"github.com/syp25815/bpx-api-go/xstring"
-	"testing"
 )
 
 func TestBpx(t *testing.T) {
@@ -17,16 +18,16 @@ func TestBpx(t *testing.T) {
 	//c.NetInfo()
 	//c.Window = "60000"
 
-	for _, val := range c.HistoryOrders("SOL_USDC", "112083497076719617", 100, 0) {
-		t.Log(xstring.Json(val))
-	}
+	//for _, val := range c.HistoryOrders("SOL_USDC", "112083497076719617", 100, 0) {
+	//	t.Log(xstring.Json(val))
+	//}
 
 	//t.Log(xstring.PrettyJson(c.HistoryOrders()))
 
-	for _, val := range c.HistoryFills("", "", 0, 0, 10, 0) {
-
-		t.Log(xstring.Json(val))
-	}
+	//for _, val := range c.HistoryFills("", "", 0, 0, 10, 0) {
+	//
+	//	t.Log(xstring.Json(val))
+	//}
 
 	//for _, val := range c.Withdrawals(10, 0) {
 	//	t.Log(xstring.Json(val))
@@ -65,6 +66,8 @@ func TestBpx(t *testing.T) {
 
 	//postOnly
 	//t.Log(xstring.Json(c.OrderExecute("SOL_USDC", "Bid", "Limit", "", "1", "12")))
+
+	t.Log(xstring.Json(c.FuturesPositions("DOGE_USDC_PERP")))
 
 }
 
