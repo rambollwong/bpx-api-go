@@ -31,7 +31,7 @@ type WsTrade struct {
 		P  string `json:"p"`
 		Q  string `json:"q"`
 		S1 string `json:"s"`
-		T1 string `json:"t"`
+		T1 int64  `json:"t"`
 		X  string `json:"X"`
 		F  string `json:"f"`
 		O  string `json:"o"`
