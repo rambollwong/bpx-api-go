@@ -15,7 +15,9 @@ func (c *Client) OrderExecute(symbol, side, orderType, timeInForce, quantity, pr
 		params["timeInForce"] = timeInForce
 	}
 	params["quantity"] = quantity
-	params["price"] = price
+	if price != "" {
+		params["price"] = price
+	}
 
 	url := API_BASE + "api/v1/order"
 	c.wrapAgent(newAgent().
